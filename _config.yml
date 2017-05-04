@@ -1,23 +1,30 @@
 # Site settings
-title: LiMing's Blog
-SEOTitle: 黎明的博客 | LiMing's Blog
-header-img: img/home-bg.jpg
-email: Despairdog@126.com
-description: "关于移动端开发、后端开发 | 这里是 LiMing's 的个人博客，与你一起发现更大的世界。"
-keyword: "个人网站"
-url: "https://psmaoalove.github.io/"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+title: BY Blog
+SEOTitle: 柏荧的博客 | BY Blog
+header-img: img/post-bg-desk.jpg
+email: qiubaiying@gmail.com
+description: "每个胜利背后都有许多尝试"
+keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
+url: "http://qiubaiying.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: img/avatar-by.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     despairdog
-zhihu_username:     despairdog
-github_username:    psmaoalove
-#twitter_username:  despairdog
-facebook_username:  despairdog
-# linkedin_username:  firstname-lastname-idxxxx
+# weibo_username:     qiubaiying
+zhihu_username:     qiubaiying
+github_username:    qiubaiying
+facebook_username:  baiying.qiu.7
+jianshu_username:   e71990ada2fd
+#twitter_username:   qiubaiying
+
 
 
 
@@ -26,7 +33,7 @@ facebook_username:  despairdog
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -47,31 +54,28 @@ kramdown:
 
 
 
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
+# 评论系统
+# Disqus settings（https://disqus.com/）
+disqus_username: qiubaiying
 
+# 多说 将于2017年6月1日正式关停服务，建议使用 Disqus（http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241）
 # Duoshuo settings
-duoshuo_username: despairdog
+# duoshuo_username: qiubaiying
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
 
 # Analytics settings
-# Baidu Analytics 
-# ba_track_id: 
+# Baidu Analytics
+ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-#ga_track_id:             # Format: UA-xxxxxx-xx
-#ga_domain: 
+ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
 
 
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -90,37 +94,16 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Su",
-        href: "http://su.gallery/"
+        title: "WY",
+        href: "http://zhengwuyang.com"
     },{
-        title: "乱序",
-        href: "http://mida.re/"
+        title: "简书·BY",
+        href: "http://www.jianshu.com/u/e71990ada2fd"
     },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
+        title: "Apple",
+        href: "https://apple.com"
     },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
+        title: "Apple Developer",
+        href: "https://developer.apple.com/"
     }
 ]
