@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: Despairdog@126.com
 description: "关于移动端开发、后端开发 | 这里是 LiMing's 的个人博客，与你一起发现更大的世界。"
 keyword: "个人网站"
-url: ""              # your host, for absolute URL
+url: "https://psmaoalove.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
