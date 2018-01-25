@@ -8,7 +8,8 @@ date:       2017-05-03
 author:     LM
 catalog: true
 tags:
-    - Python
+    - 设计模式
+    - Android
 ---
 
 Python有五个标准的数据类型：
