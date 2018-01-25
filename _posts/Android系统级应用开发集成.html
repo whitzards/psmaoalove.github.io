@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android系统级应用开发集成</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">Android系统级应用开发集成</h1>
+        <div class="show-content">
+          <p>系统级应用开发，目前据我所了解到的并且用到的分为两种：</p><p>1.源码集成</p><p>2.apk集成</p><p>这两种方式都需要配置mk文件，配置指定的参数来保证编译过程中打进ota中（简单描述）。</p><p>关于so的问题：</p><p>so在编译过程中，mk指定的so名称可以定义为2种，一种为简写不带.so后缀的，另一种全称加上.so。</p><p>也就是说系统中最多只会存在同一个so不同的名字，最多2个。如果和其他的应用在定义mk中有相同的so名字，且不符合上面所说的两种情况，就会在源码编译过程中报错，报错原因就是有两个相同的so名称。</p><p>系统编译过程中，不允许相同的名称的so存在，这个我们就得对so进行重新命名了。</p><p>so在使用的过程中，如果是本公司自己开发的，那么so改动就很方便了，如果不是，建议大家在开发的时候一定要保留源码，因为有的时候只有32位的，没有64位的，目前的android版本增加了对so64位的支持，后面趋势也会以64位为主，如果缺失的话，理论上是支持32位的兼容，但是也是有时候底层寻找so的时候会报错，所以建议大家保留so的源码，方便以后给so改变名称时使用。</p><p>以fresco为例，so有很多个，因为功能太多，可能我们需要其中几个，so对so的依赖都是写在源码当中的，当改变其中一个so的名称的时候，这个时候就会导致其中一个找不到so，这就需要改动源码重新编译so。这也就是大家在做so尽量保留源码。</p><p>静默升级so：</p><p>ota编译成功后，系统已经发布，这时候也许会出现比较严重的bug，需要用户无感知的情况升级版本，</p><p>需要我们重新升级系统应用，其实这个时候的安装的apk要包含so，之前我验证过静默升级后的apk其实是解压的，之前系统打进去的并不会解压开，这个我就不过多描述了，静默升级完毕后他会寻找so，寻找的是你升级完后的so，而不是系统system/lib下的so，所以不用担心。</p><p>这是我系统级应用开发遇到的so相关的问题，希望对读者有帮助。</p><p>谢谢</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
